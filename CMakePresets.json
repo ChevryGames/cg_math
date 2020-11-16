@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 19,
+    "patch": 0
+  },
+  "configurePresets": [
+	{
+      "name": "default-generator",
+	  "hidden": "TRUE",
+      "displayName": "Default Generator Config",
+      "description": "Default build using MSYS generator",
+      "generator": "MSYS Makefiles"
+    },
+	{
+      "name": "default-compiler",
+	  "hidden": "TRUE",
+      "displayName": "Default GCC Config",
+      "description": "Default build using GCC compiler",
+	  "cacheVariables": {
+		"CMAKE_C_COMPILER": "gcc",
+		"CMAKE_CXX_COMPILER": "g++"
+      }
+	},
+	{
+      "name": "default-architecture",
+	  "hidden": "TRUE",
+      "displayName": "Default Architecture Config",
+      "description": "Default build for x64 architecture",
+	  "architecture": {
+		"value": "x64"
+	  }
+	},
+	{
+      "name": "build-type-debug",
+	  "hidden": "TRUE",
+      "displayName": "Default Debug Config",
+      "description": "Default debug build",
+	  "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+	},
+	{
+      "name": "build-type-release",
+	  "hidden": "TRUE",
+      "displayName": "Default Release Config",
+      "description": "Default release build",
+	  "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+	},
+	{
+      "name": "default-debug",
+	  "inherits": [
+		"default-generator",
+		"default-compiler",
+		"default-architecture",	
+		"build-type-debug",
+	  ],
+      "displayName": "Default Debug Config",
+      "description": "Default debug build using MSYS generator and GCC compiler for x64"
+      "binaryDir": "${sourceDir}/build/debug"
+    },
+	{
+      "name": "default-release",
+	  "inherits": [
+		"default-generator",
+		"default-compiler",
+		"default-architecture",	
+		"build-type-release",
+	  ],
+      "displayName": "Default Release Config",
+      "description": "Default release build using MSYS generator and GCC compiler for x64"
+      "binaryDir": "${sourceDir}/build/release"
+    },
+    {
+      "name": "default",
+	  "inherits": "default-debug"
+      "displayName": "Default Config",
+      "description": "Default debug build using MSYS generator and GCC compiler for x64"
+    }
+  ]
+}
