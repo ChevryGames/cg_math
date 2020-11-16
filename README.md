@@ -1,2 +1,1 @@
-# cg_math
-Chevry Games - Math
+# Chevry Games - Math
