@@ -56,10 +56,10 @@
 		"default-generator",
 		"default-compiler",
 		"default-architecture",	
-		"build-type-debug",
+		"build-type-debug"
 	  ],
       "displayName": "Default Debug Config",
-      "description": "Default debug build using MSYS generator and GCC compiler for x64"
+      "description": "Default debug build using MSYS generator and GCC compiler for x64",
       "binaryDir": "${sourceDir}/build/debug"
     },
 	{
@@ -68,15 +68,15 @@
 		"default-generator",
 		"default-compiler",
 		"default-architecture",	
-		"build-type-release",
+		"build-type-release"
 	  ],
       "displayName": "Default Release Config",
-      "description": "Default release build using MSYS generator and GCC compiler for x64"
+      "description": "Default release build using MSYS generator and GCC compiler for x64",
       "binaryDir": "${sourceDir}/build/release"
     },
     {
       "name": "default",
-	  "inherits": "default-debug"
+	  "inherits": "default-debug",
       "displayName": "Default Config",
       "description": "Default debug build using MSYS generator and GCC compiler for x64"
     }
