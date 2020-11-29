@@ -7,14 +7,14 @@
   },
   "configurePresets": [
     {
-      "name": "default-generator",
+      "name": "generator-default",
       "hidden": "TRUE",
       "displayName": "Default Generator Config",
       "description": "Default build using MSYS generator",
       "generator": "MSYS Makefiles"
     },
     {
-      "name": "default-compiler",
+      "name": "compiler-default",
       "hidden": "TRUE",
       "displayName": "Default GCC Config",
       "description": "Default build using GCC compiler",
@@ -24,7 +24,7 @@
       }
     },
     {
-      "name": "default-architecture",
+      "name": "architecture-default",
       "hidden": "TRUE",
       "displayName": "Default Architecture Config",
       "description": "Default build for x64 architecture",
@@ -51,11 +51,11 @@
       }
     },
     {
-      "name": "default-debug",
+      "name": "debug-default",
       "inherits": [
-        "default-generator",
-        "default-compiler",
-        "default-architecture",
+        "generator-default",
+        "compiler-default",
+        "architecture-default",
         "build-type-debug"
       ],
       "displayName": "Default Debug Config",
@@ -63,11 +63,11 @@
       "binaryDir": "${sourceDir}/build/debug"
     },
     {
-      "name": "default-release",
+      "name": "release-default",
       "inherits": [
-        "default-generator",
-        "default-compiler",
-        "default-architecture",
+        "generator-default",
+        "compiler-default",
+        "architecture-default",
         "build-type-release"
       ],
       "displayName": "Default Release Config",
@@ -76,7 +76,7 @@
     },
     {
       "name": "default",
-      "inherits": "default-debug",
+      "inherits": "debug-default",
       "displayName": "Default Config",
       "description": "Default debug build using MSYS generator and GCC compiler for x64"
     }
