@@ -63,7 +63,7 @@
       ],
       "displayName": "Default Debug Config",
       "description": "Default debug build using Visual Studio 16 2019 generator for x64",
-      "binaryDir": "${sourceDir}/build/debug"
+      "binaryDir": "${sourceDir}/build/default/debug"
     },
     {
       "name": "release-default",
@@ -74,7 +74,7 @@
       ],
       "displayName": "Default Release Config",
       "description": "Default release build using Visual Studio 16 2019 generator for x64",
-      "binaryDir": "${sourceDir}/build/release"
+      "binaryDir": "${sourceDir}/build/default/release"
     },
     {
       "name": "default",
