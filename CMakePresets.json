@@ -18,7 +18,13 @@
       "hidden": "TRUE",
       "displayName": "Visual Studio 16 2019 Generator Config",
       "description": "Build using Visual Studio 16 2019 generator",
-      "generator": "Visual Studio 16 2019"
+      "generator": "Visual Studio 16 2019",
+      "cacheVariables": {
+        "GENERATOR_NAME": {
+          "type": "STRING",
+          "value": "vs-16-2019"
+        }
+      }
     },
     {
       "name": "generator-default",
