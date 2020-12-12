@@ -15,7 +15,7 @@
       "cacheVariables": {
         "GENERATOR_NAME": {
           "type": "STRING",
-          "value": "gcc"
+          "value": "mingw-makefiles"
         }
       }
     },
