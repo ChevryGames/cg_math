@@ -46,6 +46,12 @@
       "description": "Default build for x64 architecture",
       "architecture": {
         "value": "x64"
+      },
+      "cacheVariables": {
+        "ARCHITECTURE_NAME": {
+          "type": "STRING",
+          "value": "x64"
+        }
       }
     },
     {
