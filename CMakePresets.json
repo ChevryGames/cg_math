@@ -8,7 +8,7 @@
   "configurePresets": [
     {
       "name": "generator-mingw",
-      "hidden": "TRUE",
+      "hidden": true,
       "generator": "MinGW Makefiles",
       "cacheVariables": {
         "GENERATOR_NAME": {
@@ -19,7 +19,7 @@
     },
     {
       "name": "generator-vs-16-2019",
-      "hidden": "TRUE"
+      "hidden": true
       "generator": "Visual Studio 16 2019",
       "cacheVariables": {
         "GENERATOR_NAME": {
@@ -30,12 +30,12 @@
     },
     {
       "name": "generator-default",
-      "hidden": "TRUE",
+      "hidden": true,
       "inherits": "generator-vs-16-2019"
     },
     {
       "name": "architecture-default",
-      "hidden": "TRUE",
+      "hidden": true,
       "architecture": {
         "value": "x64"
       },
@@ -48,14 +48,14 @@
     },
     {
       "name": "build-type-debug",
-      "hidden": "TRUE",
+      "hidden": true,
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
     },
     {
       "name": "build-type-release",
-      "hidden": "TRUE",
+      "hidden": true,
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
