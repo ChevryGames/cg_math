@@ -9,8 +9,6 @@
     {
       "name": "generator-mingw",
       "hidden": "TRUE",
-      "displayName": "MinGW Generator Config",
-      "description": "Build using MinGW generator",
       "generator": "MinGW Makefiles",
       "cacheVariables": {
         "GENERATOR_NAME": {
@@ -21,9 +19,7 @@
     },
     {
       "name": "generator-vs-16-2019",
-      "hidden": "TRUE",
-      "displayName": "Visual Studio 16 2019 Generator Config",
-      "description": "Build using Visual Studio 16 2019 generator",
+      "hidden": "TRUE"
       "generator": "Visual Studio 16 2019",
       "cacheVariables": {
         "GENERATOR_NAME": {
@@ -35,15 +31,11 @@
     {
       "name": "generator-default",
       "hidden": "TRUE",
-      "inherits": "generator-vs-16-2019",
-      "displayName": "Default Generator Config",
-      "description": "Default build using ${GENERATOR_NAME} generator"
+      "inherits": "generator-vs-16-2019"
     },
     {
       "name": "architecture-default",
       "hidden": "TRUE",
-      "displayName": "Default Architecture Config",
-      "description": "Default build for x64 architecture",
       "architecture": {
         "value": "x64"
       },
@@ -57,8 +49,6 @@
     {
       "name": "build-type-debug",
       "hidden": "TRUE",
-      "displayName": "Default Debug Config",
-      "description": "Default debug build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -66,8 +56,6 @@
     {
       "name": "build-type-release",
       "hidden": "TRUE",
-      "displayName": "Default Release Config",
-      "description": "Default release build",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
@@ -79,8 +67,6 @@
         "architecture-default",
         "build-type-debug"
       ],
-      "displayName": "Default Debug Config",
-      "description": "Default debug build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
       "binaryDir": "${sourceDir}/build/default/debug"
     },
     {
@@ -90,15 +76,11 @@
         "architecture-default",
         "build-type-release"
       ],
-      "displayName": "Default Release Config",
-      "description": "Default release build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
       "binaryDir": "${sourceDir}/build/default/release"
     },
     {
       "name": "default",
-      "inherits": "debug-default",
-      "displayName": "Default Config",
-      "description": "Default debug build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}"
+      "inherits": "debug-default"
     }
   ]
 }
