@@ -81,7 +81,7 @@
       ],
       "displayName": "Default Debug Config",
       "description": "Default debug build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
-      "binaryDir": "${CMAKE_SOURCE_DIR}/build/default/debug"
+      "binaryDir": "${sourceDir}/build/default/debug"
     },
     {
       "name": "release-default",
@@ -92,7 +92,7 @@
       ],
       "displayName": "Default Release Config",
       "description": "Default release build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
-      "binaryDir": "${CMAKE_SOURCE_DIR}/build/default/release"
+      "binaryDir": "${sourceDir}/build/default/release"
     },
     {
       "name": "default",
