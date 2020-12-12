@@ -37,7 +37,7 @@
       "hidden": "TRUE",
       "inherits": "generator-vs-16-2019",
       "displayName": "Default Generator Config",
-      "description": "Default build using Visual Studio 16 2019 generator"
+      "description": "Default build using ${GENERATOR_NAME} generator"
     },
     {
       "name": "architecture-default",
@@ -80,7 +80,7 @@
         "build-type-debug"
       ],
       "displayName": "Default Debug Config",
-      "description": "Default debug build using Visual Studio 16 2019 generator for ${ARCHITECTURE_NAME}",
+      "description": "Default debug build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
       "binaryDir": "${CMAKE_SOURCE_DIR}/build/default/debug"
     },
     {
@@ -91,14 +91,14 @@
         "build-type-release"
       ],
       "displayName": "Default Release Config",
-      "description": "Default release build using Visual Studio 16 2019 generator for ${ARCHITECTURE_NAME}",
+      "description": "Default release build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}",
       "binaryDir": "${CMAKE_SOURCE_DIR}/build/default/release"
     },
     {
       "name": "default",
       "inherits": "debug-default",
       "displayName": "Default Config",
-      "description": "Default debug build using Visual Studio 16 2019 generator for ${ARCHITECTURE_NAME}"
+      "description": "Default debug build using ${GENERATOR_NAME} generator for ${ARCHITECTURE_NAME}"
     }
   ]
 }
