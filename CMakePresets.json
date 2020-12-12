@@ -11,7 +11,13 @@
       "hidden": "TRUE",
       "displayName": "MinGW Generator Config",
       "description": "Build using MinGW generator",
-      "generator": "MinGW Makefiles"
+      "generator": "MinGW Makefiles",
+      "cacheVariables": {
+        "GENERATOR_NAME": {
+          "type": "STRING",
+          "value": "gcc"
+        }
+      }
     },
     {
       "name": "generator-vs-16-2019",
