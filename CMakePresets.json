@@ -19,7 +19,7 @@
     },
     {
       "name": "generator-vs-16-2019",
-      "hidden": true
+      "hidden": true,
       "generator": "Visual Studio 16 2019",
       "cacheVariables": {
         "GENERATOR_NAME": {
