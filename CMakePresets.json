@@ -67,7 +67,7 @@
         "architecture-default",
         "build-type-debug"
       ],
-      "binaryDir": "${sourceDir}/build/default/debug"
+      "binaryDir": "${sourceDir}/build/${generator}/debug"
     },
     {
       "name": "release-default",
@@ -76,7 +76,7 @@
         "architecture-default",
         "build-type-release"
       ],
-      "binaryDir": "${sourceDir}/build/default/release"
+      "binaryDir": "${sourceDir}/build/${generator}/release"
     },
     {
       "name": "default",
