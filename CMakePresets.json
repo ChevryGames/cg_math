@@ -12,14 +12,14 @@
       "generator": "MinGW Makefiles"
     },
     {
-      "name": "generator-vs-16-2019",
+      "name": "generator-vs",
       "hidden": true,
       "generator": "Visual Studio 16 2019"
     },
     {
       "name": "generator-default",
       "hidden": true,
-      "inherits": "generator-vs-16-2019"
+      "inherits": "generator-vs"
     },
     {
       "name": "architecture-default",
