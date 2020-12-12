@@ -9,24 +9,12 @@
     {
       "name": "generator-mingw",
       "hidden": true,
-      "generator": "MinGW Makefiles",
-      "cacheVariables": {
-        "GENERATOR_NAME": {
-          "type": "STRING",
-          "value": "mingw-makefiles"
-        }
-      }
+      "generator": "MinGW Makefiles"
     },
     {
       "name": "generator-vs-16-2019",
       "hidden": true,
-      "generator": "Visual Studio 16 2019",
-      "cacheVariables": {
-        "GENERATOR_NAME": {
-          "type": "STRING",
-          "value": "vs-16-2019"
-        }
-      }
+      "generator": "Visual Studio 16 2019"
     },
     {
       "name": "generator-default",
@@ -38,12 +26,6 @@
       "hidden": true,
       "architecture": {
         "value": "x64"
-      },
-      "cacheVariables": {
-        "ARCHITECTURE_NAME": {
-          "type": "STRING",
-          "value": "x64"
-        }
       }
     },
     {
