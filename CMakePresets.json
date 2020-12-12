@@ -49,6 +49,7 @@
     {
       "name": "build-type-debug",
       "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/debug",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Debug"
       }
@@ -56,6 +57,7 @@
     {
       "name": "build-type-release",
       "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/release",
       "cacheVariables": {
         "CMAKE_BUILD_TYPE": "Release"
       }
@@ -66,8 +68,7 @@
         "generator-default",
         "architecture-default",
         "build-type-debug"
-      ],
-      "binaryDir": "${sourceDir}/build/${generator}/debug"
+      ]
     },
     {
       "name": "release-default",
@@ -75,8 +76,7 @@
         "generator-default",
         "architecture-default",
         "build-type-release"
-      ],
-      "binaryDir": "${sourceDir}/build/${generator}/release"
+      ]
     },
     {
       "name": "default",
