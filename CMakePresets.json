@@ -45,6 +45,22 @@
       }
     },
     {
+      "name": "build-type-multi-debug",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/debug",
+      "cacheVariables": {
+        "CMAKE_CONFIGURATION_TYPES": "Debug"
+      }
+    },
+    {
+      "name": "build-type-multi-release",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/release",
+      "cacheVariables": {
+        "CMAKE_CONFIGURATION_TYPES": "Release"
+      }
+    },
+    {
       "name": "debug-mingw",
       "inherits": [
         "generator-mingw",
