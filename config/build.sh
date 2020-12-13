@@ -1,3 +1,3 @@
 #!/bin/bash
 cmake -S .. -B ../build
-cmake --build ../build -j 6
+cmake --build ../build "$(< build-option-jobs.txt)" "$(< generator.txt)"

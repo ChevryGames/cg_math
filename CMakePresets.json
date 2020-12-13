@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 19,
+    "patch": 1
+  },
+  "configurePresets": [
+    {
+      "name": "generator-mingw",
+      "hidden": true,
+      "generator": "MinGW Makefiles"
+    },
+    {
+      "name": "generator-vs",
+      "hidden": true,
+      "generator": "Visual Studio 16 2019"
+    },
+    {
+      "name": "generator-default",
+      "hidden": true,
+      "inherits": "generator-vs"
+    },
+    {
+      "name": "architecture-vs",
+      "hidden": true,
+      "architecture": {
+        "value": "x64"
+      }
+    },
+    {
+      "name": "binary-dir-build-type-debug",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/debug"
+    },
+    {
+      "name": "binary-dir-build-type-release",
+      "hidden": true,
+      "binaryDir": "${sourceDir}/build/${generator}/release"
+    },
+    {
+      "name": "build-type-single-debug",
+      "hidden": true,
+      "inherits": "binary-dir-build-type-debug",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug"
+      }
+    },
+    {
+      "name": "build-type-single-release",
+      "hidden": true,
+      "inherits": "binary-dir-build-type-release",
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release"
+      }
+    },
+    {
+      "name": "build-type-multi-debug",
+      "hidden": true,
+      "inherits": "binary-dir-build-type-debug",
+      "cacheVariables": {
+        "CMAKE_CONFIGURATION_TYPES": "Debug"
+      }
+    },
+    {
+      "name": "build-type-multi-release",
+      "hidden": true,
+      "inherits": "binary-dir-build-type-release",
+      "cacheVariables": {
+        "CMAKE_CONFIGURATION_TYPES": "Release"
+      }
+    },
+    {
+      "name": "debug-mingw",
+      "inherits": [
+        "generator-mingw",
+        "build-type-single-debug"
+      ]
+    },
+    {
+      "name": "release-mingw",
+      "inherits": [
+        "generator-mingw",
+        "build-type-single-release"
+      ]
+    },
+    {
+      "name": "debug-vs",
+      "inherits": [
+        "generator-vs",
+        "architecture-vs",
+        "build-type-multi-debug"
+      ]
+    },
+    {
+      "name": "release-vs",
+      "inherits": [
+        "generator-vs",
+        "architecture-vs",
+        "build-type-multi-release"
+      ]
+    },
+    {
+      "name": "debug-default",
+      "inherits": [
+        "debug-vs"
+      ]
+    },
+    {
+      "name": "release-default",
+      "inherits": [
+        "release-vs"
+      ]
+    },
+    {
+      "name": "default",
+      "inherits": "debug-default"
+    }
+  ]
+}
