@@ -79,7 +79,7 @@
       "inherits": [
         "generator-vs",
         "architecture-vs",
-        "build-type-single-debug"
+        "build-type-multi-debug"
       ]
     },
     {
@@ -87,7 +87,7 @@
       "inherits": [
         "generator-vs",
         "architecture-vs",
-        "build-type-single-release"
+        "build-type-multi-release"
       ]
     },
     {
