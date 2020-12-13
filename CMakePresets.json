@@ -67,11 +67,9 @@
       ]
     },
     {
-      "name": "release-vs",
+      "name": "release-default",
       "inherits": [
-        "generator-default",
-        "architecture-default",
-        "build-type-release"
+        "release-vs"
       ]
     },
     {
