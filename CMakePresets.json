@@ -45,6 +45,20 @@
       }
     },
     {
+      "name": "debug-mingw",
+      "inherits": [
+        "generator-mingw",
+        "build-type-debug"
+      ]
+    },
+    {
+      "name": "release-mingw",
+      "inherits": [
+        "generator-mingw",
+        "build-type-release"
+      ]
+    },
+    {
       "name": "debug-vs",
       "inherits": [
         "generator-vs",
