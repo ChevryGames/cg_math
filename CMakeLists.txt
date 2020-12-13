@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.19)
 
+set(CG_MATH_OUT_DIR_NAME "bin")
+set(CG_MATH_OUT_DIR "${CMAKE_SOURCE_DIR}/${CG_MATH_OUT_DIR_NAME}")
+# TODO : Add generator name
+# TODO : Add _<CONFIG> variants
+set(CG_MATH_RUN_OUT_DIR_NAME "run")
+set(CG_MATH_RUN_OUT_DIR "${CG_MATH_OUT_DIR}/${CG_MATH_RUN_OUT_DIR_NAME}")
+
 project(CG_Math VERSION 0.1
         LANGUAGES CXX)
 
