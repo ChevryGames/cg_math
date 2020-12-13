@@ -29,7 +29,7 @@
       }
     },
     {
-      "name": "build-type-debug",
+      "name": "build-type-single-debug",
       "hidden": true,
       "binaryDir": "${sourceDir}/build/${generator}/debug",
       "cacheVariables": {
@@ -37,7 +37,7 @@
       }
     },
     {
-      "name": "build-type-release",
+      "name": "build-type-single-release",
       "hidden": true,
       "binaryDir": "${sourceDir}/build/${generator}/release",
       "cacheVariables": {
@@ -48,14 +48,14 @@
       "name": "debug-mingw",
       "inherits": [
         "generator-mingw",
-        "build-type-debug"
+        "build-type-single-debug"
       ]
     },
     {
       "name": "release-mingw",
       "inherits": [
         "generator-mingw",
-        "build-type-release"
+        "build-type-single-release"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "inherits": [
         "generator-vs",
         "architecture-vs",
-        "build-type-debug"
+        "build-type-single-debug"
       ]
     },
     {
@@ -71,7 +71,7 @@
       "inherits": [
         "generator-vs",
         "architecture-vs",
-        "build-type-release"
+        "build-type-single-release"
       ]
     },
     {
