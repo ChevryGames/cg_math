@@ -22,7 +22,7 @@
       "inherits": "generator-vs"
     },
     {
-      "name": "architecture-default",
+      "name": "architecture-vs",
       "hidden": true,
       "architecture": {
         "value": "x64"
@@ -48,7 +48,7 @@
       "name": "debug-vs",
       "inherits": [
         "generator-vs",
-        "architecture-default",
+        "architecture-vs",
         "build-type-debug"
       ]
     },
@@ -56,7 +56,7 @@
       "name": "release-vs",
       "inherits": [
         "generator-vs",
-        "architecture-default",
+        "architecture-vs",
         "build-type-release"
       ]
     },
