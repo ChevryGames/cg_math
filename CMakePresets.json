@@ -45,15 +45,29 @@
       }
     },
     {
-      "name": "debug-default",
+      "name": "debug-vs",
       "inherits": [
-        "generator-default",
+        "generator-vs",
         "architecture-default",
         "build-type-debug"
       ]
     },
     {
-      "name": "release-default",
+      "name": "release-vs",
+      "inherits": [
+        "generator-vs",
+        "architecture-default",
+        "build-type-release"
+      ]
+    },
+    {
+      "name": "debug-default",
+      "inherits": [
+        "debug-vs"
+      ]
+    },
+    {
+      "name": "release-vs",
       "inherits": [
         "generator-default",
         "architecture-default",
